@@ -7,8 +7,6 @@ const imagesContainer = document.querySelector(".gallery");
 const cardsImage = createImageCards(galleryItems);
 imagesContainer.insertAdjacentHTML("beforeend", cardsImage);
 
-// imagesContainer.addEventListener("click", onClickContainerImage);
-
 function createImageCards(galleryItems) {
   return galleryItems
     .map(({ preview, original, description }) => {
